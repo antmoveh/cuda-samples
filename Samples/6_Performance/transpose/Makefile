@@ -344,5 +344,5 @@ clean:
 clobber: clean
 
 img:
-	docker build -t registry.cn-hangzhou.aliyuncs.com/bocloud/alignedtypes:latest -f Dockerfile .
-	docker push registry.cn-hangzhou.aliyuncs.com/bocloud/alignedtypes:latest
+	docker build -t registry.cn-hangzhou.aliyuncs.com/bocloud/transpose:latest -f Dockerfile .
+	docker push registry.cn-hangzhou.aliyuncs.com/bocloud/transpose:latest
