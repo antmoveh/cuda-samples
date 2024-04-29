@@ -161,7 +161,7 @@ else ifneq ($(TARGET_ARCH),$(HOST_ARCH))
     endif
 endif
 HOST_COMPILER ?= g++
-NVCC          := $(CUDA_PATH)/bin/nvcc -ccbin $(HOST_COMPILER)
+NVCC          := $(CUDA_PATH)/bin/nvcc --cudart=shared -ccbin $(HOST_COMPILER)
 
 # internal flags
 NVCCFLAGS   := -m${TARGET_SIZE}
