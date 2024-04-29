@@ -342,3 +342,7 @@ clean:
 	rm -rf ../../../bin/$(TARGET_ARCH)/$(TARGET_OS)/$(BUILD_TYPE)/alignedTypes
 
 clobber: clean
+
+img:
+	docker build -t registry.cn-hangzhou.aliyuncs.com/bocloud/alignedtypes:latest -f Dockerfile .
+	docker push registry.cn-hangzhou.aliyuncs.com/bocloud/alignedtypes:latest
